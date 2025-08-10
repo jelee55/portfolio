@@ -2,10 +2,14 @@
 
 ## 개인정보
 
-- **이름**:  이제경
-- **생일**:  1997.01.21
-- **깃허브**: [github.com/jelee55](https://github.com/jelee55)  
-- **이메일**: jegyeong25@gmail.com  
+| 프로필 사진 | 개인정보 |
+|-------------|----------|
+| ![Profile](https://your-image-url.com/profile.jpg) |  
+| **이름**   | 이제경 |
+| **깃허브** | [github.com/jelee55](https://github.com/jelee55) |
+| **생일**   | 1997-01-21 |
+| **메일**   | jegyeong25@gmail.com |
+
 
 ## 기술 스택
 
@@ -27,3 +31,45 @@
 
 ### Communication
 <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"> <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=Discord&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
+
+
+
+
+# Project Experience
+
+## BonBon - 가맹점 통합 관리 웹 플랫폼
+
+### 프로젝트 개요
+- 간단한 프로젝트 설명 및 목적
+
+### 서비스 화면 구현 사항
+- 주요 화면 또는 기능 설명
+
+### 기술 선정 이유
+- 사용한 기술과 선정 배경
+
+### 결과 및 성과
+- 프로젝트 결과 및 성과 요약
+
+### 트러블 슈팅
+- 문제 상황과 해결 방법 목록
+
+---
+
+## YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
+
+### 프로젝트 개요
+- 간단한 프로젝트 설명 및 목적
+
+### 서비스 화면 구현 사항
+- 주요 화면 또는 기능 설명
+
+### 기술 선정 이유
+- 사용한 기술과 선정 배경
+
+### 결과 및 성과
+- 프로젝트 결과 및 성과 요약
+
+### 트러블 슈팅
+- 문제 상황과 해결 방법 목록
+
