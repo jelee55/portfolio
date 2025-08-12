@@ -41,33 +41,35 @@ BonBon – 가맹점 통합 관리 웹 플랫폼
 ==================================
 📆 2025.04 ~ 2025.06  
 👪 BE/FE 4명  
-🌎 https://github.com/jelee55/BonBonCafe-BE
+🌎 [GitHub-BonBonCafe](https://github.com/jelee55/BonBonCafe-BE)  
 
+![지도 API](image/mapAPI.png)  
 
-### 프로젝트 개요
+### 개요
 
 **본사와 가맹점 간의 운영을 효율화하기 위해 개발된 통합 영업 관리 시스템입니다.**  
 **Spring Boot 기반의 REST API 서버로, 본사와 가맹점 간의 재고 흐름, 메뉴 지정, 가맹점 주문, 공지사항 관리, 가맹점별 메뉴 관리 등 다양한 비즈니스 로직을 처리합니다.**
 
-### 서비스 화면 구현 사항
-- 주요 화면 또는 기능 설명
+---
 
-<p align="center" style="margin-bottom: 20px;">
-  <img src="image/mapAPI.png" width="500" alt="지도 API" style="margin-right: 20px;">
-  <img src="image/search.png" width="500" alt="가맹점 검색">
-</p>
+### 담당 역할  
+- 데이터베이스 설계 : 서비스 전반의 ERD 설계 및 테이블 구조 정의  
+- 프로젝트 관리 : 노션을 활용한 스프린트 및 이슈 관리  
 
-<p align="center">
-  <img src="image/table.png" width="500" alt="가맹점 조회 테이블">
-</p>
-### 기술 선정 이유
-- 사용한 기술과 선정 배경
+---
 
-### 결과 및 성과
-- 프로젝트 결과 및 성과 요약
+### 기술 선정 이유  
+- (여기에 사용한 기술과 선정 배경 작성)  
 
-### 트러블 슈팅
-- 문제 상황과 해결 방법 목록
+---
+
+### 결과 및 성과  
+- (여기에 프로젝트 결과 및 성과 요약 작성)  
+
+---
+
+### 트러블 슈팅  
+- (여기에 문제 상황과 해결 방법 목록 작성)  
 
 
 YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
