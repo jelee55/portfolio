@@ -83,8 +83,39 @@ YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
 ### 역할
 
 - 게시글 및 좋아요 REST API 설계 및 구현  
-- Pageable을 활용한 페이징 처리 적용으로 대용량 게시글 효율적 조회 지원  
-- Principal 객체를 활용하여 사용자 인증 정보 기반 권한 제어 및 보안 강화  
+- Pageable을 활용한 페이징 처리 적용으로 대용량 게시글 효율적 조회 지원
+- 댓글 및 대댓글 기능 구현으로 사용자 간 소통 강화
+- Principal 객체를 활용하여 인증 토큰에서 추출한 사용자 정보로 권한을 검증하고 보안을 강화
 - Swagger 어노테이션 적용으로 API 명세 문서 자동화  
 - Lombok을 사용해 코드 간결화 및 유지보수성 향상  
 - 예외 처리 및 로깅으로 서비스 안정성 확보  
+
+
+### 댓글(Comment) 기능을 위한 DB 테이블 설계
+- 자기 참조 관계를 활용한 대댓글(답글) 구조 구현을 위한 `parent_id` 컬럼 포함  
+- `comment` 테이블 주요 컬럼  
+  - `comment_id`: 댓글 고유 ID (PK, 자동 증가)  
+  - `user_id`: 댓글 작성자 (FK, `user` 테이블 참조)  
+  - `board_id`: 댓글이 달린 게시글 (FK, `board` 테이블 참조)  
+  - `comment_content`: 댓글 내용  
+  - `created_at`, `modified_at`: 생성 및 수정 타임스탬프  
+  - `parent_id`: 부모 댓글 ID (자기 참조 FK, 대댓글 기능 구현 및 삭제 시 cascade 처리)
+
+- 인덱스 및 외래키 제약 조건을 통해 데이터 무결성 및 조회 성능 최적화
+```sql
+CREATE TABLE IF NOT EXISTS `comment` (
+  `comment_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) NOT NULL,
+  `board_id` bigint(20) NOT NULL,
+  `comment_content` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `modified_at` timestamp NULL DEFAULT NULL,
+  `parent_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`comment_id`),
+  KEY `fk_comment_user` (`user_id`),
+  KEY `fk_comment_board` (`board_id`),
+  KEY `fk_comment_parent` (`parent_id`),
+  CONSTRAINT `fk_comment_board` FOREIGN KEY (`board_id`) REFERENCES `board` (`board_id`),
+  CONSTRAINT `fk_comment_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
+  CONSTRAINT `fk_comment_parent` FOREIGN KEY (`parent_id`) REFERENCES `comment` (`comment_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
