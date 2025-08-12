@@ -41,7 +41,7 @@ BonBon – 가맹점 통합 관리 웹 플랫폼
 ==================================
 📆 2025.04 ~ 2025.06  
 👪 BE/FE 4명  
-🌎 https://github.com/jelee55/bonbon
+🌎 https://github.com/jelee55/BonBonCafe-BE
 
 
 ### 프로젝트 개요
