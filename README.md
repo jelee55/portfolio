@@ -50,6 +50,7 @@ BonBon – 가맹점 통합 관리 웹 플랫폼
 **Spring Boot 기반의 REST API 서버로, 본사와 가맹점 간의 재고 흐름, 메뉴 지정, 가맹점 주문, 공지사항 관리, 가맹점별 메뉴 관리 등 다양한 비즈니스 로직을 처리합니다.**
 
 ### 역할
+
 - 카카오 지도 API 연동하여 위치 정보 비동기 호출 및 저장으로 API 응답 시간 최적화  
 - 가맹점 관리 RESTful API 설계 및 구현, 트랜잭션 관리와 서비스 계층 분리  
 - Principal을 활용한 사용자 인증 정보 획득 및 역할 기반 접근 제어 로직 구현
@@ -67,7 +68,7 @@ YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
 🌎 https://github.com/jelee55/yygang
 
 #### Skills 🛠️
-- Spring Boot, Spring Data JPA
+- Spring Boot, Spring Data JPA, 
 - Vue.js, Vuetify, JavaScript, Axios, Chart.js
 - MariaDB, Redis
 - REST API
@@ -81,4 +82,9 @@ YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
 
 ### 역할
 
-
+- 게시글 및 좋아요 REST API 설계 및 구현  
+- Pageable을 활용한 페이징 처리 적용으로 대용량 게시글 효율적 조회 지원  
+- Principal 객체를 활용하여 사용자 인증 정보 기반 권한 제어 및 보안 강화  
+- Swagger 어노테이션 적용으로 API 명세 문서 자동화  
+- Lombok을 사용해 코드 간결화 및 유지보수성 향상  
+- 예외 처리 및 로깅으로 서비스 안정성 확보  
