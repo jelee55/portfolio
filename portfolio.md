@@ -51,6 +51,18 @@ BonBon – 가맹점 통합 관리 웹 플랫폼
 
 ### 서비스 화면 구현 사항
 - 주요 화면 또는 기능 설명
+  <div>
+    <div>
+      <img src="images/main-page.png" width="500" alt="메인 페이지 화면">
+    </div>
+    <div>
+      <img src="images/main-page.png" width="500" alt="메인 페이지 화면">
+    </div>
+    <div>
+      <img src="images/main-page.png" width="500" alt="메인 페이지 화면">
+    </div>
+  </div>
+  
 
 ### 기술 선정 이유
 - 사용한 기술과 선정 배경
