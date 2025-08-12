@@ -73,6 +73,7 @@ YYGANG - 개인 맞춤형 건강기능식품 추천 플랫폼
 - MariaDB, Redis
 - REST API
 - Notion, Git, GitHub
+<img src="image/yygang.png" style="width: 100%;"/>
 
 ### 프로젝트 개요
 
