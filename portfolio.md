@@ -51,12 +51,11 @@ BonBon – 가맹점 통합 관리 웹 플랫폼
 
 ### 서비스 화면 구현 사항
 - 주요 화면 또는 기능 설명
-  <p align="center">
-    <img src="images/main-page.png" width="300" alt="메인 페이지 화면">
-    <img src="images/image(2)" width="300" alt="가맹점 관리 화면">
-    <img src="images/sales-page.png" width="300" alt="매출 분석 화면">
-  </p>
-  
+
+![지도 API](image/mapAPI.png)
+![가맹점 조회 테이블](image/table.png)
+![가맹점 검색](image/search.png)
+
 
 ### 기술 선정 이유
 - 사용한 기술과 선정 배경
